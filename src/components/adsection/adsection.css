@@ -1,0 +1,67 @@
+.adsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  color: black;
+  padding: 50px;
+}
+
+.adsection-content h1 {
+  font-size: 2em; /* Adjust size as needed */
+}
+
+.adsection-content p {
+  margin-top: 20px;
+}
+
+.shop-now-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.statistics {
+  display: flex;
+  margin-top: 40px;
+}
+
+.stat-item {
+  margin-right: 50px; /* Adjust spacing as needed */
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 1.5em; /* Adjust size as needed */
+}
+
+.brands-section {
+    background-color: #000000; /* Dark background for the brands */
+    color: white;
+    font-size: 40px;
+    padding: 10px 50px; /* Spacing around the brands */
+  }
+  
+  .brands {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly around items */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .brands span {
+    color: white; /* Text color for the brands */
+    margin: 0 10px; /* Space between brand names */
+    font-weight: bold;
+    cursor: pointer;
+  }
+.adsection-image img {
+    height: 40%;
+    width: 40%;
+    margin-top:10px;
+    float: right;
+}

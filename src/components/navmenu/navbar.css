@@ -1,0 +1,57 @@
+/* NavBar.css */
+.wrapper {
+    position: fixed;
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
+  
+.navbar {
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    margin: auto; /* This will center the nav within the wrapper */
+    width: 80%; /* Adjust the width as needed to be narrower than the wrapper */
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #000;
+  }
+
+  .search-bar input {
+    width: 15rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+  }
+  .cart_img{
+    height: 20px;
+    width: 20px;
+    float: left;
+  }
+  .profile_img{
+    height: 20px;
+    width: 20px;
+    float: left;
+  }

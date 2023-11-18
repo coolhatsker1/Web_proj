@@ -1,0 +1,29 @@
+
+.TopBar {
+    background-color: black;
+    padding: 0.3rem;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .register_reminder{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .close-button {
+    position: absolute;
+    right: 1rem;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    
+  }
+  
