@@ -1,0 +1,52 @@
+.new-arrivals {
+    text-align: center;
+  }
+  
+  .products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 40px auto; /* Відступ зверху і знизу, автоматичне центрування горизонтально */
+  }
+  
+  .product {
+    text-align: center;
+    margin: 0 50px; /* Відступ між продуктами */
+    font-weight: bolder;
+  }
+  
+  .product img {
+    width: 100%;
+    max-height: 800px;
+    max-width: 400px;
+  }
+  
+  .product-details {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .reviews {
+    margin-top: 5px;
+  }
+  .view-all-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-all-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px; 
+    transition: background-color 0.5s ease;
+    font-weight: bold;
+  }
+  .view-all-button:hover{
+    background-color: #000000;
+    color: #ffffff;
+  }
