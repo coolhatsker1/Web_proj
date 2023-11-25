@@ -11,7 +11,6 @@ import CategoriesMain from './components/categories_main/categories_main.js';
 
 const App = () => {
   const [promoVisible, setPromoVisible] = useState(true);
-
   const closePromo = () => setPromoVisible(false);
 
   return (

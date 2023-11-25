@@ -1,5 +1,5 @@
 import React from 'react';
-import './newarr.css';  // Додайте цей імпорт
+import './newarr.css';
 import placeholder from 'C:/my_folder/Univer/3_kurs_1_sem/web/src/resources/placeholder.png';
 
 const Product = ({ name, image, reviews, price, maxReviews }) => (
