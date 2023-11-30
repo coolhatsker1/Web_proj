@@ -1,6 +1,5 @@
-import React from 'react';
-import './newarr.css';
-import placeholder from 'C:/my_folder/Univer/3_kurs_1_sem/web/src/resources/placeholder.png';
+import React, { useState, useEffect } from 'react';
+import ProductService from 'C:/my_folder/Univer/3_kurs_1_sem/web/src/ProductService.js';
 
 const Product = ({ name, image, reviews, price, maxReviews }) => (
   <div className="product">
@@ -20,43 +19,41 @@ const Product = ({ name, image, reviews, price, maxReviews }) => (
   </div>
 );
 
-const NewArrivals = () => (
-  <div className="new-arrivals">
-    <h1>New Arrivals</h1>
-    <div className="products-container">
-      <Product
-        name="Product 1"
-        image={placeholder}
-        reviews={4}
-        price={19.99}
-        maxReviews={5}
-      />
-      <Product
-        name="Product 2"
-        image={placeholder}
-        reviews={5}
-        price={29.99}
-        maxReviews={5}
-      />
-      <Product
-        name="Product 3"
-        image={placeholder}
-        reviews={3}
-        price={39.99}
-        maxReviews={5}
-      />
-      <Product
-        name="Product 4"
-        image={placeholder}
-        reviews={2}
-        price={49.99}
-        maxReviews={5}
-      />
+const NewArrivals = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await ProductService.getProducts();
+        setProducts(response.slice(0, 4));
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+        fetchProducts();
+  }, []);
+
+  return (
+    <div className="new-arrivals">
+      <h1>New Arrivals</h1>
+      <div className="products-container">
+        {products.map(product => (
+          <Product
+            key={product.id}
+            name={product.name}
+            image={product.image}
+            reviews={Math.floor(Math.random() * 5) + 1}
+            price={product.price}
+            maxReviews={5}
+          />
+        ))}
+      </div>
+      <div className="view-all-container">
+        <button className="view-all-button">View All</button>
+      </div>
     </div>
-    <div className="view-all-container">
-      <button className="view-all-button">View All</button>
-    </div>
-  </div>
-);
+  );
+};
 
 export default NewArrivals;
