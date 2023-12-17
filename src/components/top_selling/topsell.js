@@ -1,6 +1,6 @@
 import React from 'react';
 import './topsell.css';  // Додайте цей імпорт
-import placeholder from 'C:/my_folder/Univer/3_kurs_1_sem/web/src/resources/placeholder.png';
+import placeholder from 'C:/my_folder/Univer/3_kurs_1_sem/web3/Web_proj/src/resources/placeholder.png';
 
 const Product = ({ name, image, reviews, price, maxReviews }) => (
   <div className="product">

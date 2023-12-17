@@ -1,6 +1,6 @@
 import React from 'react';
 import './adsection.css'; // Make sure to create a CSS file for styling
-import model from 'C:/my_folder/Univer/3_kurs_1_sem/web/src/resources/model.png';
+import model from 'C:/my_folder/Univer/3_kurs_1_sem/web3/Web_proj/src/resources/model.png';
 
 const AdSection = () => {
   return (
